@@ -1,0 +1,22 @@
+h1, img {
+  color: teal;
+  padding: 20; }
+
+#timer, h1 {
+  font-family: cursive;
+  text-align: center; }
+
+#timer, img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#timer::before {
+  content: "\1F551 Time left before trip starts: ";
+  font-weight: bold; }
+
+img {
+  border: dashed;
+  width: 50%; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+$primaryColor:teal;
+
+%common {
+  color: $primaryColor;
+  padding: 20;
+}
+
+%fontStuff {
+  font-family: cursive;
+  text-align: center;
+}
+
+%centerStuff {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#timer {
+  @extend %fontStuff;
+  @extend %centerStuff;
+}
+
+h1 {
+  @extend %common;
+  @extend %fontStuff;
+}
+
+#timer::before {
+  content: "\1F551 Time left before trip starts: ";
+  font-weight: bold;
+}
+
+img {
+  border: dashed;
+  width: 50%;
+  @extend %common;
+  @extend %centerStuff;
+}
