@@ -6,19 +6,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Myrtle Beach Trip</title>
-</head>
-
-<body>
-  <h1>
-    Myrtle beach trip!
-    <button id="timer" type="button" class="btn btn-info">Countdown: </button>
-  </h1>
-
-  <img alt="Myrtle Beach" src="./data/myrtleBeach.jpg" width="25%" />
-  <!-- Display the countdown timer in an element -->
-
-
   <!-- https://www.w3schools.com/howto/howto_js_countdown.asp -->
   <!-- <p id="timer"></p> -->
   <script>
@@ -50,8 +40,137 @@
         document.getElementById("timer").innerHTML = "NONE";
       }
     }, 1000);
-  </script> <br>
+    $('.carousel').carousel({
+      interval: 200
+    })
+  </script>
+</head>
 
+<body>
+  <h1>
+    Myrtle beach trip!
+    <button id="timer" type="button" class="btn btn-info">Countdown: </button>
+  </h1>
+
+  <!-- <img alt="Myrtle Beach" src="./data/beach.jpg" width="25%" /> -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./data/beach.jpg" class="d-block w-30" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./data/zari.jpeg" class="d-block w-30" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./data/escape.jpg" class="d-block w-30 alt=" ...">
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- Display the countdown timer in an element -->
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Links
+          </button>
+        </h2>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <ul>
+            <a href="https://docs.google.com/document/d/1zxuwqGdVvFmHSTVbkF5g7h1v8KEnEYALoVEvnR_IrEs/edit?usp=sharing"
+              target="_blank" class="badge badge-info">Our shared google doc</a>
+            <br>
+            <a href="https://www.cityofmyrtlebeach.com/coronavirus/" target="_blank" class="badge badge-info">Myrtle
+              beach covid advisory </a>
+            <br>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Logistics
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Location</td>
+                <td>
+                  <a href="https://www.airbnb.com/rooms/22415914?source_impression_id=p3_1589916519_9WLemQ9%2BJUaqe4ev&guests=1&adults=1"
+                    target="_blank" class="badge badge-info">Airbnb condo</a>
+                  <br>
+
+                  <a href="https://www.google.com/maps/dir/34+North+Williams+Street,+York,+PA/Vacasa+Myrtle+Beach,+351+Lake+Arrowhead+Rd,+Myrtle+Beach,+SC+29572/@36.8418862,-80.1171245,7z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89c88b818267eb01:0xd44deb9c5a14db40!2m2!1d-76.777!2d39.9516777!1m5!1m1!1s0x89006453b6177803:0xaa2eea32f792bc35!2m2!1d-78.7869125!2d33.7645178!3e0"
+                    target="_blank" class="badge badge-info">351 Lake Arrowhead Road 2-208,Myrtle Beach,SC,29572</a>
+                  <br>
+                  <a href="https://www.google.com/maps/dir/34+N+Williams+St,+York,+PA+17404/33.765087,-78.78714/@36.8419829,-80.1233518,7z/data=!3m1!4b1!4m8!4m7!1m5!1m1!1s0x89c88b818267eb01:0xd44deb9c5a14db40!2m2!1d-76.777!2d39.9516777!1m0"
+                    target="_blank" class="badge badge-info">242 Arcadian Dunes, Myrtle Beach, SC 29572</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Duration</td>
+                <td>
+                  Sat May 30th - Sat June 13
+                  <br>
+                  Check-in 4 pm
+                  <br>
+                  Check-out 10am
+                </td>
+              </tr>
+              <tr>
+                <td>Host</td>
+                <td>
+                  Phone : 971-803-5495
+                  <br>
+                  Guest services: 503-345-9399
+                </td>
+              </tr>
+              <tr>
+                <td>Misc</td>
+                <td>
+                  Reservation number: VA1T-JRAE
+                  <hr>
+                  <b> Arcadian Dunes </b> is what the place we're staying is called; the ones that rented it to use is
+                  <b> Vacasa
+                  </b>
+                  <hr>
+
+                  Parking: passes are required for all vehicles. These passes MUST be purchased directly at
+                  the Arcadian Dunes HOA office. Each pass is $20 per car and is good for the entirety of your stay.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

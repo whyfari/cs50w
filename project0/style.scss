@@ -21,6 +21,14 @@ $primaryColor:teal;
   @extend %centerStuff;
 }
 
+body {
+  background-color: peachpuff !important;
+}
+
+.card {
+  background-color: peachpuff !important;
+}
+
 h1 {
   @extend %common;
   @extend %fontStuff;
