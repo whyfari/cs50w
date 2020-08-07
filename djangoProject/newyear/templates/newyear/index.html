@@ -1,0 +1,21 @@
+  <!-- FIXME static files stuff isn't working for me-->
+  <!-- {% load static%} -->
+  <html lang="en">
+
+  <head>
+    <title> New Year </title>
+    <!-- FIXME static files stuff isn't working for me-->
+    <!-- <link href="{% static 'newyear/styles.css' %}" rel="stylesheet"> -->
+    <link href="../../static/newyear/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1> Is it new year?</h1>
+    {% if newYear %}
+    <h1> YES </h1>
+    {% else %}
+    <h1> NO </h1>
+    {% endif %}
+  </body>
+
+  </html>

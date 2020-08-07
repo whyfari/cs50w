@@ -1,0 +1,17 @@
+#!/usr/bin/python3.7
+
+# return true if all integers are positive and any integer is negative
+
+n = int(input())
+myList = input().split()
+intList = [int(i) for i in myList]
+
+if (all( [ num > 0 for num in intList ]) and any( [ w == ''.join(reversed(w)) for w in myList ])):
+  print("True")
+else :
+  print("False"
+
+
+# solution from editorial
+N,n = int(raw_input()),raw_input().split()
+print all([int(i)>0 for i in n]) and any([j == j[::-1] for j in n])

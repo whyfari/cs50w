@@ -1,0 +1,17 @@
+{% extends "tasks/layout.html" %}
+{% block body%}
+<h1>
+  Tasks list all ... {{tasks}}
+</h1>
+<ul>
+  {% for task in tasks %}
+  <li> {{task}} </li>
+  {% endfor %}
+</ul>
+<a href="/tasks/add"> add explicit url</a>
+<br>
+<!-- can't use it now w/o namespace since we added it -->
+<!-- <a href="{% url 'tasks:add' %}">addd url by name</a> -->
+<br>
+<a href="{% url 'tasks:add' %}">addd url by name</a>
+{% endblock %}
